@@ -1,6 +1,6 @@
 # Claude skills
 
-Popular open-source Claude skills I've adapted so they're easier to use if you don't code. Every one credits the person who made the original, and each folder keeps its original license.
+Popular open-source Claude skills I've adapted so they're easier to use if you don't code, plus my own. Every adapted one credits the person who made the original, and each folder keeps its original license.
 
 ## Skills
 
@@ -10,6 +10,7 @@ Popular open-source Claude skills I've adapted so they're easier to use if you d
 | [prompt-master](prompt-master/) | Turns a rough idea into a prompt for Claude, ChatGPT, Lovable or an image tool | [prompt-master](https://github.com/nidhinjs/prompt-master) by Nidhin Joseph Nelson (MIT) |
 | [social](social/) | Hooks, short video scripts and captions for TikTok, Instagram and LinkedIn | [social](https://github.com/coreyhaines31/marketingskills/tree/main/skills/social) by Corey Haines (MIT) |
 | [frontend-design](frontend-design/) | Helps your app or site not look like every other AI app | [frontend-design](https://github.com/anthropics/skills/tree/main/skills/frontend-design) by Anthropic (Apache-2.0) |
+| [linkedin-playbook](linkedin-playbook/) | Rewrites your LinkedIn so recruiters find you, using my 5-step playbook | My own [LinkedIn playbook](https://github.com/Lily-Tewolde/ai-guides/tree/main/02-linkedin-playbook), with extras from [linkedin-profile-optimizer](https://github.com/Paramchoudhary/ResumeSkills/tree/main/skills/linkedin-profile-optimizer) by Param Choudhary (MIT) |
 
 ## What's a skill?
 
