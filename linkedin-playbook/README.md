@@ -8,11 +8,23 @@ This skill helps Claude rewrite your LinkedIn profile so recruiters can find you
 4. Featured section
 5. 9 post ideas for your first 3 weeks of posting
 
-It also covers your photo, banner, recommendations and keeping your resume and LinkedIn in sync.
+It also covers:
+
+- your photo
+- your banner
+- recommendations
+- keeping your resume and LinkedIn in sync
 
 ## How it works
 
-Claude asks for your resume, screenshots of your profile, the role you want and 2 to 3 real job posts. Then you pick step by step or all at once. It won't invent numbers or experience, and it keeps your job titles truthful.
+Claude asks for:
+
+- your resume
+- screenshots of your profile
+- the role you want
+- 2 to 3 real job posts
+
+Then you pick step by step or all at once. It won't invent numbers or experience, and it keeps your job titles truthful.
 
 Don't skip Step 5. Posting took my search appearances from around 40 a week to over 200 in a month.
 
