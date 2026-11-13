@@ -50,4 +50,5 @@ In Claude Code, put the folder at `~/.claude/skills/resume-audit/`.
 
 - The blank My Resume Rules.md, Bullet Bank.md and Decision Log.md come inside the skill, in `templates`.
 - If Claude can't read or save files, it asks you to paste them in, gives you the resume as text to put into your template, turns its comments into a list of questions, and hands back every updated file.
+- To match your LinkedIn afterwards, it points you to the [linkedin-playbook](../linkedin-playbook/) skill if you have it installed, and to the LinkedIn playbook guide if you don't.
 - Everything else matches resume-audit.md in the guide.

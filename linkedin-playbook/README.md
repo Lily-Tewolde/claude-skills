@@ -29,7 +29,7 @@ Claude asks for:
 - the role you want
 - 2 to 3 real job posts
 
-If you ran the [Resume Audit](https://github.com/Lily-Tewolde/ai-guides/tree/main/04-resume-audit) first, it starts from your new resume. It writes everything out for you to change yourself and never edits, posts or publishes anything on your profile. It won't put any numbers on LinkedIn except your dates, or claim anything you haven't done.
+If you ran the [resume-audit](../resume-audit/) skill first, it starts from your new resume. It writes everything out for you to change yourself and never edits, posts or publishes anything on your profile. It won't put any numbers on LinkedIn except your dates, or claim anything you haven't done.
 
 It works best where Claude can open your profile in your browser and read your files, like Claude Code or Cowork. In a plain chat, it asks for screenshots and for your files pasted in, and gives you the mock as HTML to save and open yourself.
 
