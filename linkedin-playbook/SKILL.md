@@ -34,7 +34,7 @@ You (Claude) are updating one person's LinkedIn profile for one target role. The
 ## Before Step 1: Gather everything 🤖
 
 - **The profile.** Read it live in the browser if you can. Otherwise ask for screenshots of the header, About, every role, Education, Projects, Licenses & certifications, Honors & awards, Skills and Featured.
-- **The resume.** If the Resume Audit ran first, use that version, plus My Resume Rules.md and Decision Log.md.
+- **The resume.** If the Resume Audit ran first, use that version, plus My Resume Rules.md, Decision Log.md and Bullet Bank.md. A line still marked ★ in Bullet Bank.md is waiting for the person's OK, so anything you write from it waits for the same OK. Say so, and never treat it as confirmed.
 - **2 to 3 full job posts** for the target role, word for word. If you can't open a link, ask the person to paste the full post. Every keyword choice comes from these.
 - **The target role,** as recruiters search it.
 - Say what you've got and what you still need. Don't write anything yet.
@@ -42,7 +42,7 @@ You (Claude) are updating one person's LinkedIn profile for one target role. The
 **No browser or file access?** In a chat where you can't open the profile or the person's files:
 
 - Ask for the screenshots above, or the text of each section pasted in.
-- If the Resume Audit ran first, ask the user to paste in the resume, My Resume Rules.md and Decision Log.md. Don't guess what's in them.
+- If the Resume Audit ran first and its files aren't already in this chat, ask the user to paste in the resume, My Resume Rules.md, Decision Log.md and Bullet Bank.md. Don't guess what's in them.
 - If you can't look up an award, ask the person what it is and who it goes to.
 - For someone else's profile, write "Delete:" in front of anything that comes off, since crossed-out text is lost when it's pasted. Give the mock as one complete HTML file in a code block, and tell the user how to save it: as plain text, in a file whose name ends in .html, then open it in their browser. Never publish it.
 

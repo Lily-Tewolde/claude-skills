@@ -49,6 +49,7 @@ In Claude Code, put the folder at `~/.claude/skills/linkedin-playbook/`.
 
 ## What's different from the guide
 
+- If you ran the resume-audit skill first, it also reads your Bullet Bank.md. Anything it writes from a line still marked ★ waits for your OK, the same as on your resume.
 - If Claude can't open your profile or read your files, it asks for screenshots and for your resume files pasted in, asks about any award it can't look up, marks what comes off with "Delete:" so it survives a paste, and gives you the mock as one HTML file with steps to save and open it yourself.
 - Everything else matches linkedin-playbook.md in the guide.
 
