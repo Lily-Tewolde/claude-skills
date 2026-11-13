@@ -1,202 +1,194 @@
 ---
 name: linkedin-playbook
-description: Rewrite a LinkedIn profile so recruiters find it, covering headline, job titles, About, experience, Top skills, Open to Work, Featured and 9 post ideas. Use for any LinkedIn profile work.
+description: LinkedIn profile optimizer for one target role, from headline and About to skills, Featured and posts. Use to update my LinkedIn, match it to my resume or help a friend with theirs.
 license: MIT
 ---
 
 # LinkedIn Playbook
 
-Help the user rewrite their LinkedIn profile so recruiters can find them, they rank higher in LinkedIn search, and more profile views turn into interviews. The method is 5 steps, plus a few extras at the end. Many users are new to AI, so use plain words and explain a LinkedIn setting the first time you mention it.
+Update one LinkedIn profile for one target role, for the user or for someone they're helping. Read the profile, then work through the 5 steps and the extras: headline and titles, About and experience, skills and Open to Work, Featured, posts, and the profile basics recruiters filter by. Write everything out for the person to change themselves. Never edit, post or publish anything on the profile.
 
-## Rules that never change
+Each step is tagged:
+- 🤖 **Auto**: Claude does this for you
+- 🙋 **You decide**: Claude asks, you answer
 
-1. **Never invent anything.** Use only what's in the user's resume, screenshots and their own words. No made-up metrics, employers, dates, projects, tools, skills or credentials. If a detail is missing, leave a placeholder like `[the project you led]` and ask for it.
-2. **Keep job titles truthful.** Suggest the standard title recruiters search for the job the user actually did. Never invent a role, add seniority they didn't have or change the employer.
-3. **No metrics anywhere on LinkedIn.** No numbers, percentages or dollar figures in the headline, About, experience or anywhere else. If the user gives you metrics, use them for context only, to understand their level. They stay on the resume and get saved for interviews.
-4. **Keywords come from the job posts.** You can't see LinkedIn's search data, so the 2 to 3 job posts the user shares are what make your keyword picks real.
-5. **No generic career advice.** Everything should be specific to the user's actual work and field.
-6. **Write for a recruiter scanning for 7 seconds.**
-7. **Keep it all in one conversation.** Steps 2 to 5 build on the resume, screenshots and job posts shared at the start.
+> **Golden rule:** Claude writes, you change the profile. Nothing goes on LinkedIn that isn't true, and no numbers go on it at all.
 
-## Before you start
+---
 
-Ask for everything in one short message. Skip anything the user already gave you.
+## How to use this skill
 
-> To get started, send me:
->
-> 1. Your resume
-> 2. Screenshots of your LinkedIn profile: header, About, every role, skills and Featured
-> 3. The role you're targeting
-> 4. 2 to 3 real job posts for that role. Paste the full text, not just the link
->
-> Do you want to go step by step so you can review each part, or get everything at once?
+You (Claude) are updating one person's LinkedIn profile for one target role. The person is whoever the profile belongs to: the user, or someone the user is helping. This skill is your operating spec.
 
-If the user skips the job posts, ask once more and explain why they matter (rule 4). If they still can't share any, go ahead and say your keyword picks are best guesses.
+1. **Follow this whole skill, every time.**
+2. **Do the steps in order.** Stop any time you need facts only the person can give. When the profile belongs to someone else, those questions go through the user. Anything only the person can decide, like which headline or whether a role stays, goes back to them as a clear choice with your recommendation. Never decide it for them.
+3. **Never post, publish or change anything on the person's profile.** Even if you can open it in the browser, don't click edit, save or post. The person makes every change themselves.
+4. **Read the live profile when you can.** If you can open it in the browser, read it there. Screenshots are the fallback.
+5. **If the Resume Audit ran first, start from the resume.** Use its titles, dates and decisions, from the person's My Resume Rules.md and Decision Log.md if they have them. Say what changes on LinkedIn because of them.
+6. **No numbers anywhere on the profile,** except the dates on each entry. The person's numbers are context for you, not copy.
+7. **If the profile belongs to someone else,** write it as a handoff they can follow on their own (see Doing this for someone else).
+8. **Run the check at the end** before anything goes back to the person.
 
-If you need the user's industry or best credential later and can't tell from the resume or job posts, ask then.
+---
 
-## Two ways to run it
+## Before Step 1: Gather everything 🤖
 
-Both get to the same place.
+- **The profile.** Read it live in the browser if you can. Otherwise ask for screenshots of the header, About, every role, Education, Projects, Licenses & certifications, Honors & awards, Skills and Featured.
+- **The resume.** If the Resume Audit ran first, use that version, plus My Resume Rules.md, Decision Log.md and Bullet Bank.md. A line still marked ★ in Bullet Bank.md is waiting for the person's OK, so anything you write from it waits for the same OK. Say so, and never treat it as confirmed.
+- **2 to 3 full job posts** for the target role, word for word. If you can't open a link, ask the person to paste the full post. Every keyword choice comes from these.
+- **The target role,** as recruiters search it.
+- Say what you've got and what you still need. Don't write anything yet.
 
-- **Step by step.** Do one step, show the output, then stop and wait. Let the user review and tweak it before you move to the next step. End each step with its "Done when" check.
-- **All at once.** Produce everything in the order under "All at once" below, then offer the Extras.
+**No browser or file access?** In a chat where you can't open the profile or the person's files:
 
-## Step 1. Headline and titles: get searchable
+- Ask for the screenshots above, or the text of each section pasted in.
+- If the Resume Audit ran first and its files aren't already in this chat, ask the user to paste in the resume, My Resume Rules.md, Decision Log.md and Bullet Bank.md. Don't guess what's in them.
+- If you can't look up an award, ask the person what it is and who it goes to.
+- For someone else's profile, write "Delete:" in front of anything that comes off, since crossed-out text is lost when it's pasted. Give the mock as one complete HTML file in a code block, and tell the user how to save it: as plain text, in a file whose name ends in .html, then open it in their browser. Never publish it.
 
-The headline is the most important field on the profile. LinkedIn's search weights it more than any other field. A creative title that doesn't match a real search term means the profile never shows up, no matter how strong the rest of it is.
+## Step 1: Headline and titles 🤖 then 🙋
 
-Produce:
+- **Headline:** 5 options in this format, each under 100 characters: `Role | Keyword · Keyword · Keyword | Credential`. LinkedIn allows 220, but only about the first 100 show in search and on mobile.
+- `Role` is the target role, the way recruiters search it.
+- Use keywords that show up in the job posts and that a recruiter would actually search. No buzzwords, no numbers.
+- **The credential is real.** Only use a licence or certification the person actually holds. If they don't have one yet, leave that part off.
+- **Titles:** flag any job title that's vague, internal or creative, and give the standard title recruiters search instead. If the Resume Audit ran first, titles match the resume exactly.
+- The person picks the headline and decides on every title change.
 
-1. **5 headline options**, each under 100 characters, in this exact format:
+## Step 2: About and experience 🤖 then 🙋
 
-   `Role | Keyword · Keyword · Keyword | Credential`
+**The About**
 
-   Use keywords that show up in the job posts and that a recruiter would actually search to find someone in the user's field. No buzzwords, no metrics. Show the character count next to each option. LinkedIn allows 220 characters, but only about the first 100 show in search and on mobile, so the important part goes up front.
+- A story, not a summary. 4 to 6 short paragraphs:
+  1. An opening hook
+  2. The thread connecting their career
+  3. What they do now and how they think about the work
+  4. One line on what they're open to next
+- No bullets, no numbers. Weave in the keywords a recruiter searches for, but keep it sounding like a real person talking.
 
-2. **A title audit.** Review every job title on the profile. Flag any that are vague, internal or "creative" (like Marketing Ninja, Customer Happiness Hero, Growth Lead or IC4) and give the standard title recruiters actually search for instead. Follow rule 2.
+**Each role**
 
-Done when: the headline is under 100 characters and every job title is one a recruiter would search.
+- One short narrative paragraph: what they owned and how they worked.
+- Then the Focus Areas:
+  1. **Format.** Each one is the skill a recruiter searches, then the specifics in brackets.
+  2. **Wording comes from the job posts.** Pull it from the requirements and responsibilities, and only where it's work the person has actually done.
+  3. **The count follows the role.** 4 to 12, depending on how important the role is to where they're going.
+  4. **"Add only if true" list.** Anything the posts ask for that the person hasn't confirmed goes on a separate list for them, never on the profile.
+  5. **No numbers means any number.** That includes things that aren't results, like a team size in a project description.
 
-## Step 2. About and experience: make it a story, kill the metrics
+Example, made up:
 
-The About section is a story, not a summary. Bullet-point profiles full of metrics read like a copy of the resume. Recruiters scan for keywords and credibility, not spreadsheets. Warn the user this one might feel wrong at first.
+- Event logistics (vendor contracts, venue sourcing, run-of-show planning)
+- Budget tracking (spend reports, invoice reconciliation, cost forecasts)
 
-Produce:
+## If the person is early in their career 🙋
 
-1. **The About section as a story**, 4 to 6 short paragraphs:
-   - An opening hook
-   - The thread connecting their career
-   - What they do now and how they think about the work
-   - One line on what they're open to next
+LinkedIn doesn't let anyone move sections around, so Projects always sits low on the page. These keep Experience for real jobs and still get the projects seen.
 
-   No bullet points, no metrics. Weave in the keywords a recruiter searches for, but keep it sounding like a real person talking. Write it like they're explaining their career to someone at dinner who actually asked.
+1. **Experience is for real jobs.** Ask whether unrelated roles, like seasonal or part-time work, stay or go. School projects never go in Experience.
+2. **One Education entry per degree they actually earned.** No description or Focus Areas. An earlier program that didn't lead to the degree comes off, and the About tells that story instead.
+3. **Projects stay in the Projects section.** Link each one to the school with "Associated with", tag the skills used, and add media once it exists.
+4. **Featured is how a project gets seen first,** since the Projects section can't be moved up.
+5. **Licenses & certifications.** Add any the person holds. Recruiters filter by them.
+6. **Honors & awards.** Look up what each award is first. Keep the ones that are rare, competitive or in their field. Cut general scholarships for entry-level roles.
+7. **The About matches the level they're aiming for.** Lead with the work they do now and what their background adds. Use school work as evidence, not as a chapter in school-to-job order.
 
-2. **Every role** as one short narrative paragraph (what they owned and how they worked), followed by 3 to 5 **Focus Areas** bullets. Each bullet is a cluster of searchable keywords. No metrics anywhere.
+## Step 3: Skills and Open to Work 🤖 then 🙋
 
-When you rewrite, take out every metric from every section. If their current profile has numbers, point them out and say they're moving to the resume.
+**Top 5**
 
-Done when: the About reads like a story and there are no numbers left anywhere on the profile.
+- Pick 5 Top skills for the About section, and put the same 5 first in the Skills section, since only the first few show without clicking.
+- **Be honest about the ranking.** You can't see LinkedIn's search data. Say the ranking comes from how often each skill shows up across the job posts.
 
-## Step 3. Skills and Open to Work: get into the recruiter filters
+**Skills on every entry**
 
-LinkedIn Recruiter filters by skills and job titles. If the user's don't match what a recruiter is filtering for, they won't show up, even if they're a perfect fit. Every box left empty is a search they're invisible in.
+1. **List the exact skills for every entry.** Each experience, education and project entry gets its own list, using names recruiters actually search.
+2. **Say how to add them.** Type each one in and pick LinkedIn's exact match from the dropdown. If it doesn't come up, pick the closest suggestion.
+3. **Only skills they've used** in that role or project.
+4. **Prune the Skills section.** Remove skills that don't fit the target role, but keep all the software and tools they've actually used. A tool they've never used comes off, like any other skill that isn't true.
 
-Produce:
+**Open to Work**
 
-1. **Exactly 5 Top skills**, ranked by how often recruiters actually search them for this role. Base them on the job posts and the words recruiters use, not what sounds most impressive. Only pick skills the user's background supports. Then tell them to:
-   - Add the 5 as Top skills in the About section (click the pencil on About)
-   - Put the same 5 first in the Skills section too, since only the first few show without clicking
+- 5 target job titles
+- Remote on if they want it, and which employment types
+- **Recruiters only when they're still employed,** and say why. LinkedIn tries to hide it from their own company's recruiters, but it can't promise it.
 
-2. **Open to Work settings:**
-   - 5 job titles to enter, chosen to appear in the most relevant recruiter searches
-   - Whether to turn on Remote
-   - Which employment types to select
-   - Visibility set to **Recruiters only**
+## Step 4: Featured 🤖 then 🙋
 
-This step works on its own. If the user only wants Step 3, it can run without the resume, but it's more personal with it.
+- Give 3 Featured ideas they could make in under 2 hours each, ranked by how much they'd impress a recruiter.
+- For each one: what it contains, why it works as proof, and what tool or format to make it with.
+- Best: a 2 to 3 minute video walking through something they built or shipped. Also good: a strong post in their field, a live tool or a portfolio link.
+- Early career: their best project goes here (see above).
+- **Employer and client work stays out** unless the employer says it's okay.
 
-Done when: the About has 5 Top skills, and Open to Work has 5 titles and is set to Recruiters only.
+## Step 5: Posts 🤖
 
-## Step 4. Featured section: prove you ship
+- 9 post ideas, 3 a week for 3 weeks, from their real work.
+- Mix three formats: a lesson from real work, a behind-the-scenes look at how they work, and a simple tip or framework from their field.
+- A scroll-stopping first line for each. No generic career advice.
+- **Employer and client work stays out** unless the employer says it's okay.
 
-Featured is the first thing a recruiter clicks after the headline, and almost everyone leaves it empty. It's where profile views turn into messages or drop off. One strong piece here does more than ten perfect bullet points.
+## Extras 🤖 then 🙋
 
-Produce **3 specific Featured ideas** the user could realistically create in under 2 hours each, ranked by how much they'd impress a recruiter. Base them on the user's real background. For each idea:
+- **Photo:** a clear headshot where their face fills most of the frame. Good light, a plain or on-brand background, dressed the way they would for work in their field.
+- **Banner:** 1584 × 396 pixels, and one that fits their field. Not blank. One short line on it about what they do is optional.
+- **Location is a city,** not just a country. Recruiters filter by city.
+- **The verification badge,** with a work email or ID.
+- **Media on entries,** like a link, PDF or video on the role or project it belongs to.
+- **Languages,** every one they speak, at their real level.
+- **Recommendations: give one first.** People are far more likely to write one back. Ask former managers, close teammates and clients, say what you'd love them to mention, and ask right after wrapping something good together. Aim for 5 to 10 over time. Draft the ask in under 80 words, casual, not like a template.
+- **Connections.** Grow them at their current company, their school and the companies they're applying to.
+- **Resume sync.** Job titles, companies and dates match the resume exactly. The numbers stay on the resume.
+- **Skills and tools match both ways.** If the About or Skills mention software that isn't on the resume, or the resume has a tool LinkedIn doesn't, flag it and let the person decide which one changes.
 
-- Exactly what it should contain
-- Why it works as a credibility signal
-- How to create it (what tool, format or platform to use)
+---
 
-What works best:
+## Doing this for someone else 🙋
 
-- Best: a 2 to 3 minute video walking through a live product, tool or project
-- Also good: a strong post in their field, a live tool anyone can use, or a portfolio or case study link
+When the profile belongs to someone the user is helping, they're the one who has to make every change. Write it all to them, so they can follow it on their own.
 
-Done when: the Featured section has at least one thing they built or shipped.
+1. **Written to them, in the user's voice.** Second person, like "I picked this headline for you" or "delete these three roles". No AI-looking labels or numbered tags.
+2. **Clear change, keep and delete.** Mark what to change, leave everything else alone, and cross out what comes off.
+3. **Open or close with a note.** The user isn't an expert in their field, so this is mostly formatting and a strong direction, and they should adjust anything that seems off.
+4. **A visual mock of the finished profile.** An HTML page laid out like their profile, with the user's notes beside each section and a switch to hide the notes, so they can see it the way a recruiter would. It's a file they open on their own computer, never a page published online.
+5. **Employer and client work stays out** of Featured and posts unless the employer says it's okay.
+6. **Open to Work is set to Recruiters only while they're still employed,** with the reason: LinkedIn tries to hide it from their own company's recruiters, but it can't promise it.
+7. **Their details stay private.** They stay in their own folder, never go into a public repo, an issue or a shared doc without them knowing, and any example shared about what was learned is made up.
 
-## Step 5. Post about your work: the one that compounds
+---
 
-This is the step that compounds. Posting about real work 2 to 3 times a week lifts search appearances and shows both the algorithm and recruiters that the user knows their stuff. Tell the user to post 2 to 3 times a week about their real work, not generic career advice.
+## Check before it goes back 🤖 then 🙋
 
-Produce **9 post ideas**: 3 weeks, 3 posts a week, based on the user's real experience. Mix these three formats across the 9 posts:
+Run every check and say which passed and which didn't:
 
-- A lesson they've learned from real work experience
-- A behind-the-scenes look at how they actually approach their work
-- A simple tip or framework from their field
+1. Headline under 100 characters, in the format, with a credential the person actually holds
+2. Every job title is one a recruiter would search, and matches the resume
+3. No numbers anywhere, including team sizes and counts that aren't results
+4. The About is a story with no bullets, at the level they're aiming for
+5. Every Focus Area is in the format, worded from the job posts, and only covers work they've done
+6. Anything unconfirmed is on the "add only if true" list, not the profile
+7. Every experience, education and project entry has its exact skills, and only ones used there
+8. The Top 5 says the ranking comes from the job posts
+9. Location is a city
+10. Titles, companies, dates, skills and tools match the resume, or every mismatch is flagged for the person
+11. No employer or client work in Featured or posts without the employer's OK
+12. If it's someone else's profile, it's written to them, with the note and the mock
+13. Nothing on the profile was changed by you
 
-For each post:
+Then hand it all back to the person and **wait**. They make every change.
 
-- A scroll-stopping first line
-- Specific to their actual work and field
-- No generic career advice
+---
 
-Lay it out as a table: week, format, first line, and one line on what the post covers.
+## The rules that keep it honest
 
-Done when: they have 9 post ideas and their first post is up.
+- **Claude writes, the person changes the profile.** Never edit, post or publish.
+- **No numbers on LinkedIn.** Save them for the resume and interviews.
+- **Only what's true.** Skills they used, credentials they hold, Focus Areas from work they did.
+- **Titles match the resume.**
+- **Say where rankings come from.** You can't see LinkedIn's search data.
 
-## All at once
+---
 
-When the user picks all at once, produce these 8 sections in this order, following every rule above:
+The full guide, with a prompt for every step and a master prompt: [LinkedIn playbook](https://github.com/Lily-Tewolde/ai-guides/tree/main/02-linkedin-playbook)
 
-1. **Headline**: 5 options in the Step 1 format, under 100 characters, no metrics
-2. **Title audit**: titles that don't match real recruiter search terms, with the standard replacement for each
-3. **About section**: story-driven, 4 to 6 paragraphs, no metrics, no bullets. Hook, career thread, current work, what they want next
-4. **All experience roles**: each role as one narrative paragraph, then 3 to 5 Focus Areas bullets. No metrics. Every bullet is a keyword cluster
-5. **Top 5 skills to pin**: ranked by how often they show up in the job posts and in recruiter searches for the target role
-6. **Open to Work settings**: 5 titles, location types, employment types, set to Recruiters only
-7. **Featured section ideas**: 3 ideas they can create in under 2 hours, ranked by impact
-8. **9 post ideas**: 3 weeks, 3 a week (lesson learned, behind the scenes, tip or framework), one scroll-stopping first line per post
-
-Then offer the Extras.
-
-## Extras: the finishing touches
-
-These aren't part of the 5 steps, but they round out the profile. Offer them after Step 5, or after the all-at-once output.
-
-### Photo and banner
-
-The first thing people see, before they read anything.
-
-- **Photo:** a clear headshot where their face fills most of the frame. Good light, a plain or on-brand background, and dressed the way they would for work in their field
-- **Banner:** 1584 x 396 pixels. Use it to say what they do, or keep it simple and on brand. Skip anything busy that fights with the photo
-
-### Recommendations
-
-A few recommendations from people who actually worked with them go a long way. Aim for 5 to 10 over time.
-
-- **Who to ask:** former managers, teammates they worked closely with, and clients
-- **Give one first.** People are way more likely to write one back
-- **Make it easy.** Tell them the project or skill they'd love them to mention
-- **Time it right.** Ask right after wrapping something good together
-
-If the user wants help asking, get the person's name, the company, the project they worked on together and 1 to 2 skills or moments to mention. Then write a short, friendly LinkedIn message asking for a recommendation. Keep it casual, under 80 words, and don't make it sound like a template.
-
-### Keep the resume and LinkedIn in sync
-
-A recruiter will have both open. If they don't match, that's a question the user didn't want them asking.
-
-- Same job titles and dates on both, every time
-- Same story, told two ways. LinkedIn can be longer and more conversational than the resume
-- The numbers stay on the resume (see Step 2)
-
-To check, compare the resume to the LinkedIn screenshots. List every place where a job title, company name or date doesn't match exactly, and say which one to change so they line up. Don't rewrite anything else. If Step 1 changed a title, remind them to update the resume too.
-
-Done when: their photo and banner are up, they've asked for at least one recommendation, and their titles and dates match their resume.
-
-## Before you send anything
-
-Check your output against this list:
-
-- Every headline is under 100 characters and follows `Role | Keyword · Keyword · Keyword | Credential`
-- No metrics anywhere in the LinkedIn copy
-- The About is 4 to 6 paragraphs with no bullets
-- Every role has one narrative paragraph and 3 to 5 Focus Areas bullets
-- Exactly 5 Top skills and 5 Open to Work titles, set to Recruiters only
-- At least one Featured idea, 3 when you're giving ideas
-- 9 post ideas across 3 weeks
-- Every title is truthful and nothing is invented
-
-## If they ask about Creator Mode
-
-LinkedIn retired it in 2024. Everyone has the Follow button now, so posting does the work.
+*Built from my LinkedIn optimization video: headline → story → skills → Featured → posts.*
