@@ -43,7 +43,8 @@ You (Claude) are updating one person's LinkedIn profile for one target role. The
 
 - Ask for the screenshots above, or the text of each section pasted in.
 - If the Resume Audit ran first, ask the user to paste in the resume, My Resume Rules.md and Decision Log.md. Don't guess what's in them.
-- For someone else's profile, give the mock as one complete HTML file in a code block, for the user to save as a .html file and open in their browser. Never publish it.
+- If you can't look up an award, ask the person what it is and who it goes to.
+- For someone else's profile, write "Delete:" in front of anything that comes off, since crossed-out text is lost when it's pasted. Give the mock as one complete HTML file in a code block, and tell the user how to save it: as plain text, in a file whose name ends in .html, then open it in their browser. Never publish it.
 
 ## Step 1: Headline and titles 🤖 then 🙋
 
