@@ -1,30 +1,37 @@
 # linkedin-playbook
 
-This skill helps Claude rewrite your LinkedIn profile so recruiters can find you. It's the skill version of my [LinkedIn playbook guide](https://github.com/Lily-Tewolde/ai-guides/tree/main/02-linkedin-playbook), and it follows the same 5 steps:
+This skill helps Claude update your LinkedIn profile so recruiters can find you. It's the skill version of my [LinkedIn playbook guide](https://github.com/Lily-Tewolde/ai-guides/tree/main/02-linkedin-playbook), so there's no file to download and drop in each time. It follows the same 5 steps:
 
 1. Headline and job titles
-2. About and experience, written as a story with no metrics
-3. Top skills and Open to Work
+2. About and experience, written as a story with no numbers, and Focus Areas worded from the job posts
+3. Top skills, the exact skills for every entry, and Open to Work
 4. Featured section
 5. 9 post ideas for your first 3 weeks of posting
 
 It also covers:
 
-- your photo
-- your banner
+- early career profiles: Experience, Education, Projects, licenses and honors
+- your photo and banner
+- the profile basics recruiters filter by, like a city for your location
 - recommendations
-- keeping your resume and LinkedIn in sync
+- keeping your resume and LinkedIn in sync, skills and tools included
+- helping a friend or family member, with a handoff written to them and a private mock of their finished profile
+- a check before anything comes back to you
 
 ## How it works
 
+Say something like: "Update my LinkedIn for [TARGET ROLE]. Here's my profile [LINK OR SCREENSHOTS], my resume and 2 to 3 job posts: [PASTE JOB POSTS]"
+
 Claude asks for:
 
+- your profile, as a link or screenshots
 - your resume
-- screenshots of your profile
 - the role you want
 - 2 to 3 real job posts
 
-Then you pick step by step or all at once. It won't invent numbers or experience, and it keeps your job titles truthful.
+If you ran the [Resume Audit](https://github.com/Lily-Tewolde/ai-guides/tree/main/04-resume-audit) first, it starts from your new resume. It writes everything out for you to change yourself and never edits, posts or publishes anything on your profile. It won't put any numbers on LinkedIn except your dates, or claim anything you haven't done.
+
+It works best where Claude can open your profile in your browser and read your files, like Claude Code or Cowork. In a plain chat, it asks for screenshots and for your files pasted in, and gives you the mock as HTML to save and open yourself.
 
 Don't skip Step 5. Posting took my search appearances from around 40 a week to over 200 in a month.
 
@@ -39,6 +46,11 @@ In the Claude app:
 5. Pick your zip file and switch the skill on.
 
 In Claude Code, put the folder at `~/.claude/skills/linkedin-playbook/`.
+
+## What's different from the guide
+
+- If Claude can't open your profile or read your files, it asks for screenshots and for your resume files pasted in, and gives you the mock as one HTML file to save and open yourself.
+- Everything else matches linkedin-playbook.md in the guide.
 
 ## Credit
 
