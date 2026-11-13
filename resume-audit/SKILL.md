@@ -50,7 +50,13 @@ Job search/
 
 Blank versions of My Resume Rules.md, Bullet Bank.md and Decision Log.md are in this skill's `templates` folder.
 
-**No file access?** In a chat where you can't read or save files, ask the user to paste in My Resume Rules.md and Bullet Bank.md. At the end, give them the full text of every file you made or changed, so they can save it.
+**No file access?** In a chat where you can't read or save the person's files:
+
+- Ask the user to paste in every file the person already has: My Resume Rules.md, Bullet Bank.md, Decision Log.md and their story bank. Never start a blank one over one that exists.
+- Ask for the resume as pasted text. Say plainly that you can't build the .docx or check the page here. Give the resume back as text, in the order of the person's template, for them to put into it, and mark the one-page check as theirs to do.
+- Google Docs comments become a numbered list of questions, each with the line it's about, for the user to add.
+- If you can't open a job post link, ask for the full post pasted in.
+- At the end, give them the full text of every file you made or changed, so they can save it.
 
 ## Keeping it private
 

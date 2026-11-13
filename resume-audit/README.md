@@ -32,7 +32,7 @@ Claude asks for:
 
 The first time, it helps you fill in My Resume Rules.md from the blank templates in the `templates` folder. It won't invent numbers or claim anything you haven't done, and nothing gets uploaded or sent without your OK.
 
-It works best where Claude can read and save files, like Claude Code or Cowork. In a plain chat, it asks you to paste your files in and gives you the updated ones to save at the end.
+It works best where Claude can read and save files, like Claude Code or Cowork. In a plain chat, it asks you to paste your files in, gives you the resume as text to put into your template, and hands back the updated files to save at the end. You check the page length yourself.
 
 ## How to install it
 
@@ -49,5 +49,5 @@ In Claude Code, put the folder at `~/.claude/skills/resume-audit/`.
 ## What's different from the guide
 
 - The blank My Resume Rules.md, Bullet Bank.md and Decision Log.md come inside the skill, in `templates`.
-- If Claude can't read or save files, it asks you to paste them in and hands back the updated ones.
+- If Claude can't read or save files, it asks you to paste them in, gives you the resume as text to put into your template, turns its comments into a list of questions, and hands back every updated file.
 - Everything else matches resume-audit.md in the guide.
