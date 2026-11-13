@@ -11,6 +11,7 @@ Popular open-source Claude skills I've adapted so they're easier to use if you d
 | [social](social/) | Hooks, short video scripts and captions for TikTok, Instagram and LinkedIn | [social](https://github.com/coreyhaines31/marketingskills/tree/main/skills/social) by Corey Haines (MIT) |
 | [frontend-design](frontend-design/) | Helps your app or site not look like every other AI app | [frontend-design](https://github.com/anthropics/skills/tree/main/skills/frontend-design) by Anthropic (Apache-2.0) |
 | [linkedin-playbook](linkedin-playbook/) | Rewrites your LinkedIn so recruiters find you, using my 5-step playbook | My own [LinkedIn playbook](https://github.com/Lily-Tewolde/ai-guides/tree/main/02-linkedin-playbook), with extras from [linkedin-profile-optimizer](https://github.com/Paramchoudhary/ResumeSkills/tree/main/skills/linkedin-profile-optimizer) by Param Choudhary (MIT) |
+| [resume-audit](resume-audit/) | Tailors your resume to a job post and checks it before it goes out | My own [Resume Audit guide](https://github.com/Lily-Tewolde/ai-guides/tree/main/04-resume-audit) |
 
 ## What's a skill?
 
