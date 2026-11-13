@@ -1,0 +1,5 @@
+{
+  "allow_en_dash": "dates",
+  "readme_must_link_dirs": "^[a-z]",
+  "skills": true
+}
