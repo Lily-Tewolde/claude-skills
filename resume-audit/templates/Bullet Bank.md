@@ -8,10 +8,10 @@ How to mark them:
 
 - Tag each bullet with what it proves, like `[onboarding]` `[budget]` `[training]`
 - ★ new and not approved yet. Nothing with a ★ goes out until the person says the wording is right
-- ⚠ known-weak. Use it only when nothing better covers the point
+- ⚠ known-weak. Use it only when nothing better covers a must-have, and never as the first bullet in a role
 - `[__]` a number or another fact that's still missing. The person fills it in, nobody guesses it
 
-Every bullet is X-Y-Z: the outcome and its number first, then how.
+Every bullet is X-Y-Z: the outcome and its number first, then how. "By" only when the person says the how caused it.
 
 ---
 

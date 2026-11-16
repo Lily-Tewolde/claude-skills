@@ -28,11 +28,11 @@ Claude asks for:
 
 - the full job post
 - your resume, as a .docx or just a PDF
-- your My Resume Rules.md and Bullet Bank.md, if you have them
+- your My Resume Rules.md, Bullet Bank.md, Story Bank.md and Decision Log.md, if you have them
 
 The first time, it helps you fill in My Resume Rules.md from the blank templates in the `templates` folder. It won't invent numbers or claim anything you haven't done, and nothing gets uploaded or sent without your OK.
 
-It works best where Claude can read and save files, like Claude Code or Cowork. In a plain chat, it asks you to paste your files in, gives you the resume as text to put into your template, and hands back the updated files to save at the end. You check the page length yourself.
+It works best where Claude can read and save files, like Claude Code or Cowork. In a plain chat, it asks you to paste your files in, gives you the resume as text to put into your template, and hands back the updated files to save at the end. You save the job post, export the PDF and check the page length yourself.
 
 ## How to install it
 
@@ -48,7 +48,7 @@ In Claude Code, put the folder at `~/.claude/skills/resume-audit/`.
 
 ## What's different from the guide
 
-- The blank My Resume Rules.md, Bullet Bank.md and Decision Log.md come inside the skill, in `templates`.
-- If Claude can't read or save files, it asks you to paste them in, gives you the resume as text to put into your template, turns its comments into a list of questions, and hands back every updated file.
+- The blank My Resume Rules.md, Bullet Bank.md, Story Bank.md and Decision Log.md come inside the skill, in `templates`.
+- If Claude can't read or save files, it asks you to paste them in, gives you the resume as text to put into your template, turns its comments into a list of questions, and hands back every updated file. It also asks you to save the job post yourself, starts from your paste of a PDF exactly as it is, and asks you to export, check and show the PDF before anything is sent.
 - To match your LinkedIn afterwards, it offers to run the [linkedin-playbook](../linkedin-playbook/) skill if you have it installed. If you don't, or a friend is doing it on their own, it points to the LinkedIn playbook guide.
 - Everything else matches resume-audit.md in the guide.
