@@ -235,7 +235,7 @@ Then:
 
 **Then match LinkedIn**, after the person has seen the PDF. In a handoff, these go into the next steps on the second tab instead:
 
-1. Point them to the [LinkedIn playbook](https://github.com/Lily-Tewolde/ai-guides/tree/main/02-linkedin-playbook) to update the profile to match. Its file, linkedin-playbook.md, starts from this resume's decisions and says what changed because of them.
+1. If the linkedin-playbook skill is installed, offer to run it next to update the profile to match. If it isn't, or for someone doing it on their own, point them to the [LinkedIn playbook](https://github.com/Lily-Tewolde/ai-guides/tree/main/02-linkedin-playbook) guide and its file, linkedin-playbook.md. Both start from this resume's decisions and say what changed because of them.
 2. Check the job titles, companies and dates match the resume exactly.
 3. Check skills and tools both ways. If the About or Skills on LinkedIn mention software that isn't on the resume, or the other way around, flag it and let the person decide which one changes.
 4. Move school and capstone projects into LinkedIn's Projects section, the same way they stay out of Experience on the resume. Link each one to the school with "Associated with", tag the skills and add media. LinkedIn sections can't be moved, so the best project also goes in Featured.
