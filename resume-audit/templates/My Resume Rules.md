@@ -17,7 +17,7 @@ Keep this file in the person's own folder, next to their Bullet Bank.md. Claude 
 - Bullet Bank.md, in this folder
 
 **Story bank:**
-- 
+- Story Bank.md, in this folder
 
 **Folder for tailored versions:**
 - 
@@ -29,7 +29,8 @@ Keep this file in the person's own folder, next to their Bullet Bank.md. Claude 
 | | |
 
 **Never write** (claims I can't back up):
-- The list is at the bottom of Bullet Bank.md, so it sits right next to the bullets
+- The list is at the bottom of Bullet Bank.md, so it sits right next to the bullets. Until the bank exists, list them here, and they move there in the first build
+- 
 
 **Titles** (same as LinkedIn):
 
@@ -45,6 +46,6 @@ Keep this file in the person's own folder, next to their Bullet Bank.md. Claude 
 - Body font size: 
 - Smallest font size it can ever go: 
 - Margins: 
-- Header: name, then one line with phone • email • LinkedIn
+- Header (the top of the page, not the document's header): name, then one line with phone • email • LinkedIn
 - Accent colour: 
 - Dates: en dash in date ranges, no em dashes anywhere
